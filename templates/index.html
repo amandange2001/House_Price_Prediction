@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Enter House Details</h2>
+    <form action="/predict" method="post">
+        <label>Median Income:</label>
+        <input type="text" name="MedInc" required><br>
+        
+        <label>House Age:</label>
+        <input type="text" name="HouseAge" required><br>
+        
+        <label>Average Rooms:</label>
+        <input type="text" name="AveRooms" required><br>
+        
+        <label>Average Occupancy:</label>
+        <input type="text" name="AveOccup" required><br>
+        
+        <button type="submit">Predict Price</button>
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
+

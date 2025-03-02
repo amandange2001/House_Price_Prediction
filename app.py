@@ -5,8 +5,10 @@ import os
 
 app = Flask(__name__)
 
+project_dir = os.path.dirname(os.path.abspath(__file__)) 
+model_path = os.path.join(project_dir, 'models', 'house_price_model.pkl')
 
-model_path = os.path.join('model', 'house_price_model.pkl')
+
 model = joblib.load(model_path)
 
 @app.route('/')
@@ -20,13 +22,8 @@ def predict():
         HouseAge = float(request.form['HouseAge'])
         AveRooms = float(request.form['AveRooms'])
         AveOccup = float(request.form['AveOccup'])
-
-        
         features = np.array([[MedInc, HouseAge, AveRooms, AveOccup]])
-
-    
         prediction = model.predict(features)[0]
-
         return render_template('index.html', prediction_text=f'Predicted House Price: ${prediction * 100000:.2f}')
     
     except Exception as e:

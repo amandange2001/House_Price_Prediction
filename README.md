@@ -1,9 +1,11 @@
 # House Price Prediction
 
 ## Overview
+
 This project is a web-based application that predicts house prices based on user inputs using a machine learning model. The application is built using Flask as the backend framework, with a trained machine learning model for predictions.
 
 ## Features
+
 - User-friendly web interface for inputting house details
 - Machine learning model to predict house prices
 - Flask-based backend for handling requests and predictions
@@ -11,6 +13,7 @@ This project is a web-based application that predicts house prices based on user
 - Scalable and easily deployable
 
 ## Tech Stack
+
 - **Backend:** Flask, Python
 - **Frontend:** HTML, CSS, Bootstrap
 - **Machine Learning:** Scikit-learn, Pandas, NumPy
@@ -19,9 +22,11 @@ This project is a web-based application that predicts house prices based on user
 ## Installation
 
 ### Prerequisites
+
 Ensure you have Python installed. You can download it from [Python's official website](https://www.python.org/downloads/).
 
 ### Setup
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/amandange2001/house-price-prediction.git
@@ -46,33 +51,37 @@ Ensure you have Python installed. You can download it from [Python's official we
    ```
 
 ## Usage
+
 - Enter house features such as size, location, number of bedrooms, and bathrooms.
 - Click the **Predict** button.
 - The application will display the estimated house price.
 
 ## Project Structure
+
 ```
 house-price-prediction/
 │── templates/          # HTML templates for frontend
 │── static/             # CSS, JS, and assets
-│── model/              # Trained ML model
+│── models/             # Trained ML models
 │── app.py              # Flask application
 │── requirements.txt    # Dependencies
 │── README.md           # Project documentation
 ```
 
 ## Future Enhancements
+
 - Integrate real-time data sources for better predictions
 - Deploy on cloud platforms like AWS, Heroku, or Azure
 - Improve UI/UX with interactive charts
 
 ## License
+
 This project is open-source and available under the MIT License.
 
 ## Contact
-For any queries or contributions, feel free to reach out:
-- **GitHub:** [amandange2001](https://github.com/amandange2001)
-- **Email:** amandange2018@gmail.com
 
- 
-            
+For any queries or contributions, feel free to reach out:
+
+- **GitHub:** [amandange2001](https://github.com/amandange2001)
+- **Email:** [amandange2018@gmail.com](mailto\:amandange2018@gmail.com)
+
